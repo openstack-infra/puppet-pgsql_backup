@@ -1,0 +1,10 @@
+Verified+2: Jenkins
+Code-Review+1: Paul Belanger <pabelanger@redhat.com>
+Code-Review+2: yolanda.robla <info@ysoft.biz>
+Workflow+1: yolanda.robla <info@ysoft.biz>
+Code-Review+2: Spencer Krum <nibz@spencerkrum.com>
+Submitted-by: Jenkins
+Submitted-at: Fri, 14 Aug 2015 08:01:07 +0000
+Reviewed-on: https://review.openstack.org/212714
+Project: openstack-infra/puppet-pgsql_backup
+Branch: refs/heads/master
