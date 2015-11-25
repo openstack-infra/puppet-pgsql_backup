@@ -19,7 +19,7 @@ define pgsql_backup::backup (
   if ! defined(File[$dest_dir]) {
     file { $dest_dir:
       ensure => directory,
-      mode   => '0755',
+      mode   => '0750',
       owner  => 'root',
       group  => 'root',
     }
