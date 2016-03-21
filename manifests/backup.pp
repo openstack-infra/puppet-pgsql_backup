@@ -2,17 +2,20 @@
 #
 
 define pgsql_backup::backup (
-  $database_user,
   $database_password,
+  $database_user,
+  # The parameters below are grouped in violation of style guide
+  # to save readable configuration of cron. All other parameters
+  # are grouped properly.
+  $day           = '*',
+  $hour          = '0',
+  $minute        = '0',
   $database_host = 'localhost',
   $database_port = '5432',
-  $minute = '0',
-  $hour = '0',
-  $day = '*',
-  $dest_dir = '/var/backups/pgsql_backups',
-  $rotation = 'daily',
-  $num_backups = '30',
-  $pgpass_file = '/root/.pgpass',
+  $dest_dir      = '/var/backups/pgsql_backups',
+  $num_backups   = '30',
+  $pgpass_file   = '/root/.pgpass',
+  $rotation      = 'daily',
 ) {
   # Wrap in check as there may be mutliple backup defines backing
   # up to the same dir.
